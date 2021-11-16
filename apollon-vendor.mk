@@ -6,8 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/apollon
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/apollon/proprietary/system/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so \
-    vendor/xiaomi/apollon/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
+    vendor/xiaomi/apollon/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/xiaomi/apollon/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
     vendor/xiaomi/apollon/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/xiaomi/apollon/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/xiaomi/apollon/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -90,7 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/apollon/proprietary/vendor/etc/camera/xiaomi/thirdpartysupernight.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysupernight.json \
     vendor/xiaomi/apollon/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
-    vendor/xiaomi/apollon/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/apollon/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/apollon/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/apollon/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -238,8 +237,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_diag.cfg \
-    vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_diag.cfg \
-    vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/xiaomi/apollon/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/xiaomi/apollon/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     vendor/xiaomi/apollon/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
@@ -442,8 +439,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_cirrus_sp.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/libMIAIHDR_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libMIAIHDR_skel.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
@@ -480,9 +475,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.hardware.nfc@1.0.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.hardware.nfc@1.1.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib/vendor.nxp.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.hardware.nfc@2.0.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/camera/com.qti.actuator.apollo_dw9800.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.apollo_dw9800.so \
@@ -594,10 +586,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/com.qti.feature2.sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.sr.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/com.xiaomi.plugin.mibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.xiaomi.plugin.mibokeh.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/audio.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.kona.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/camera.xiaomi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.xiaomi.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
@@ -650,7 +640,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libaudioroute_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioroute_ext.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libcamera_dirty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_dirty.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
@@ -742,9 +731,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/sensors.mius.proximity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mius.proximity.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.0.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@1.1.so \
-    vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@2.0.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON
