@@ -282,6 +282,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
+    vendor/xiaomi/apollon/proprietary/vendor/lib/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libresampler.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_cirrus_sp.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/libMIAIHDR_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libMIAIHDR_skel.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
@@ -513,6 +514,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libremosaichvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaichvx_stub.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
+    vendor/xiaomi/apollon/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/xiaomi/apollon/proprietary/vendor/lib64/libsnpe_adsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_adsp.so \
